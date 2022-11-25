@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokeilua</title>
+    <!-- Lisätään CSS-säännöt style-tagin sisään head-osan loppuun -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #special {
+            background-color: #008000;
+            color: white;
+            font-size: 30px;
+            padding: 80px;
+        }
+
+        .muotoiltu {
+            background-color: #D3D3D3;
+            padding: 10px;
+            margin: 10px;
+        }
+        /* Sivun kuvat responsiiviksi. */
+        figure {
+            display: block;
+        }
+
+        figure img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Tämä on sivun tärkein otsikko</h1>
+        <p id="special">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit est quisquam et quos recusandae
+            sint quaerat, rem illo! Reprehenderit, quia!</p>
+
+        <a href="images/html-tag.png" target="_blank" rel="noopener noreferrer">
+            <!-- kuva responsiiviseksi, img-tagin pitää olla figure-tagin sisällä. Poikkeus esim. firman logo jonka koko EI saa muuttua, niin ei laiteta figure-tagin sisään img-tägiä. -->
+            <figure>
+                <img src="images/html-tag.png" alt="Cat is very grumpy.">
+            </figure>
+        </a>
+        <p class="muotoiltu">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit est quisquam et quos
+            recusandae sint quaerat, rem illo! Reprehenderit, quia!</p>
+        <p class="muotoiltu">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit est quisquam et quos
+            recusandae sint quaerat, rem illo! Reprehenderit, quia!</p>
+    </main>
+    <footer>
+        <p>2021 &copy; mnemicon</p>
+    </footer>
+</body>
+
+</html>
